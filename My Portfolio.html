@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="stylecard.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Umair Afzal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarnav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarnav">
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a class="navbar-link mx-2" href="#about">About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link mx-2" href="#skills">Skills</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link mx-2" href="#Projects">Projects</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link mx-2" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero-section -->
+
+    <section class="hero">
+        <div>
+            <h1>Hello I'm <span style="color: #f4820a">Umair Afzal</span></h1>
+            <p>Junior Software Developer | Frontend Developer | C# Enthusiast</p>
+            <a href="#Projects" class="btn btn-primary mt-3">View My Work</a>
+        </div>
+    </section>
+
+    <!-- about-section -->
+    <section id="about" class="py-5 reveal">
+        <div class="container">
+            <h2 class="section-title">About me</h2>
+            <div class="about-content">
+                <img src="profilepic.jpeg" alt="Umair Afzal" class="about-img" />
+                <div>
+                    <p>
+                        Hello! I'm <span style="font-weight: bold;">Umair Afzal</span>, a passionate software developer
+                        specializing in
+                        frontend development, C# and c++. I love building responsive websites
+                        and desktop apps using HTML, CSS, Bootstrap, and C#.
+                    </p>
+                    <p class="mt-3">
+                        I'm currently focused on improving my skills and building
+                        real-world projects. I enjoy turning ideas into clean, functional
+                        interfaces and I'm always eager to learn new technologies.
+                    </p>
+                    <p class="mt-3">
+                        When I'm not coding, I enjoy exploring new tools, solving
+                        problems, and improving my understanding of software development
+                        best practices.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skill-section -->
+
+    <section id="skills" class="py-5 reveal">
+        <div class="container">
+            <h2 class="section-title">My skills</h2>
+            <div class="row text-center">
+                <div class="col-md-3 mb-3">
+                    <div class="card p-3">
+                        <h4>HTML</h4>
+                        <p>Building Structed and Semantic web pages</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card p-3">
+                        <h4>CSS</h4>
+                        <p>Styling Beautifull and responsive Webpages</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card p-3">
+                        <h4>BOOTSTRAP</h4>
+                        <p>Creating responsive and ui components</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card p-3">
+                        <h4>C#</h4>
+                        <p>Devolping backend logics and apps</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card p-3">
+                        <h4>C++</h4>
+                        <p>Object oriented programming and problem solving</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card p-3">
+                        <h4>JavaScript</h4>
+                        <p>Adding interactivity and dynamic features to websites</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- project-section -->
+
+    <section id="Projects" class="py-5 reveal">
+        <div class="container">
+            <h2 class="section-title text-center">MY Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="fixture-mobel.png" class="card-img-top" alt="Fixture's Mobel" target="_blank" />
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Project 1</h5>
+                            <!-- <p class="card-text">Responsive website using HTML, CSS, and Bootstrap.</p> -->
+                            <a href="websiteclone/project.html" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="login-page.png" class="card-img-top" alt="Login Page" />
+                        <div class="card-body">  
+                            <h5 class="card-title text-center">Project 2</h5>
+                            <!-- <p class="card-text">C# desktop application.</p> -->
+                            <a href="loginproject/login.html" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="website.png" class="card-img-top" alt="website" />
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Project 3</h5>
+                            <!-- <p class="card-text">Bootstrap-based landing page for a local business.</p> -->
+                            <a href="websitebootstrap/bootstraptemplate.html" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="login-animation.png" class="card-img-top" alt="login-animation" target="_blank" />
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Project 4</h5>
+                            <!-- <p class="card-text">Responsive website using HTML, CSS, and Bootstrap.</p> -->
+                            <a href="login animation/index.html" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="tic-tac-toe.png" class="card-img-top" alt="TIC-TAC-TOE" target="_blank" />
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Project 5</h5>
+                            <!-- <p class="card-text">Responsive website using HTML, CSS, and Bootstrap.</p> -->
+                            <a href="tic tac toe game/index.html" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact-section -->
+
+    <section id="Contact" class="py-5 reveal">
+        <div class="container">
+            <h2 class="section-title">Contact me</h2>
+            <p class="text-center">You can reach me at:</p>
+            <ul class="list-unstyled text-center">
+                <li>Email: umair@example.com</li>
+                <li>Phone: +92 300 0000000</li>
+                <li>
+                    LinkedIn:
+                    <a href="#" target="_blank">linkedin.com/in/umair-afzal</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- footer - section -->
+    <footer>
+        <p>&copy; 2026 Umair Afzal, All Rights Reserved</p>
+    </footer>
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script>
+        const reveals = document.querySelectorAll(".reveal");
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            },
+            { threshold: 0.1 },
+        );
+        reveals.forEach((el) => observer.observe(el));
+    </script>
+</body>
+
+</html>

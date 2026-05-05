@@ -1,0 +1,232 @@
+a:hover{
+    text-decoration: none;
+}
+/* or b cections ka lea common padding margin */
+.section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.section h2.section-head{
+    text-align: center;
+    color: black;
+    margin-bottom: 40px;
+}
+.section h2.section-head::after{
+    background-color: #e74c3c;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100px;
+    margin: 20px auto;
+    
+}
+
+#header{
+    color: #fff;
+    background-color: #e74c3c;   
+}
+#logo h1{
+    font-size: 2rem;
+    margin-top: 5px;
+}
+#menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+#menu li{
+    display: inline-block;
+    
+}
+#menu li a{
+    color: #fff;
+    padding: 15px 10px;
+    display: block;
+    text-decoration: none;
+}
+#menu li a:hover{
+ background-color: #c0392b;
+}
+#banner{
+   
+    background-image: url(img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+ 
+}
+.banner-tittle{
+    padding-top: 5rem;
+}
+.banner-tittle h1{
+    background: rgba(255,255,255,0.6);
+    display: inline-block;
+    padding: 10px;
+    margin: 0;   
+}
+.banner-tittle p.lead{
+   color: #fff;
+   background-color:rgba(231, 76, 60,0.7);
+   padding: 10px;
+}
+.service-box{
+    text-align: center;
+}
+.service-box i.fa{
+    color: #e74c3c;
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+/* #testimonial{
+    background: url(testimonial.avif) no-repeat 0 0;
+    background-size: cover;
+    padding: 50px 0;
+    position: relative;
+} */
+ .testimonial img{
+    width: 60px;          /* choti image */
+    height: 60px;
+    border-radius: 50%;   /* round image (optional, achi lagti hai) */
+    object-fit: cover;    /* image stretch nahi hogi */
+    margin-top: 10px;
+}
+ .testimonial{
+    color: #fff;
+ }
+#testimonial{
+    background: url('testimonial.avif') no-repeat 0 0;
+    background-size: cover;
+    padding: 50px 0;
+    position: relative;
+    background-position: center;
+}
+#testimonial::before{
+    background-color: rgba(52, 73, 94, 0.7);
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+#testimonial * {
+    position: relative;
+    z-index: 1; /* text aur content pseudo-element ke upar */
+}
+.newspost img {
+    width: 100%;      /* parent column ke width ke hisaab se stretch */
+    height: 200px;    /* fix height, adjust as needed */
+    object-fit: cover; /* image crop karke fit kare without distortion */
+    display: block;    /* inline spacing remove kare */
+    border-radius: 5px; /* optional: thoda rounded look */
+    margin-bottom: 10px;
+}
+.newspost a{
+    color: #e74c3c;
+    text-decoration: none;
+}
+.newspost h3{
+    font-size: 1.35rem;
+}
+.post-date{
+    font-size: 13px;
+    margin-bottom: 2px;
+
+}
+.post-date::before{
+    content: "\f073";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+a.readmore{
+    font-size: 14px;
+    color: #e74c3c;
+}
+#footer-sidebar{
+    color: #fff;
+    background-color: rgb(52, 73, 94);
+    padding: 20px 0;
+}
+.footer-widget ul {
+    list-style: none; /* bullets remove */
+    padding: 0;       /* default padding remove */
+    margin: 0;        /* default margin remove */
+}
+.footer-widget ul li a {
+    text-decoration: none; /* underline remove */
+    color: #fff;
+    margin-bottom: 3px;           /* link color set karo, optional */
+}
+.footer-widget h4::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #fff;
+}
+#footer{
+    color: #fff;
+    background-color: #2c3e50;
+    padding: 10px 0;
+}
+#socialicons{
+   list-style: none;
+   color: #fff;
+   margin: 0;
+   padding: 0;
+}
+#socialicons li{
+    display: inline;
+    padding-left: 5px;
+}
+#socialicons li a{
+    color: #fff;
+    font-size: 23px;
+}
+@media (max-width: 992px){
+    .newspost{
+         margin-bottom: 30px;
+     }
+}
+@media (max-width: 768px) {
+    #logo{
+        text-align: center;
+        margin: 10px 0;
+    }
+    #menu{
+        text-align: center;
+    }
+    .banner-tittle{
+        padding-top: 0;
+    }
+    .banner-tittle h1{
+        font-size: 1.7rem;
+    }
+    .section{
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .testimonial{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .service-box{
+        margin-bottom: 30px;
+    }
+    
+    .footer-widget{
+        margin-bottom: 20px;
+    }
+    #footer{
+        text-align: center;
+    }
+    #socialicons{
+        margin-top: 10px;
+    }
+}

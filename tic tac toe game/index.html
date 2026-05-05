@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TIC-TAC-TOE Game</title>
+</head>
+
+<body>
+    <div class="name-container" id="name-container">
+        <h1>TIC-TAC-TOE</h1>
+        <div class="name-form">
+            <h2>Enter Player Names</h2>
+            <input type="text" id="player-o-name" placeholder="Enter name of player O" />
+            <input type="text" id="player-x-name" placeholder="Enter name of player X" />
+            <p id="alert-msg" style="color: red; display: none; font-size: 3vmin;">Please enter both player names!</p>
+                <button id="start-btn">Start Game</button>
+        </div>
+    </div>
+    <div class="msg-container hide">
+        <p id="msg">Winner</p>
+        <button id="new-btn">New game</button>
+    </div>
+
+    <main class="hide" id="main-game">
+        <h1>TIC-TAC-TOE</h1>
+        <div class="score-board">
+            <p id="score-o">O Player: 0</p>
+            <p id="score-x">X Player: 0</p>
+        </div>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <button id="reset-btn">Reset game</button>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
